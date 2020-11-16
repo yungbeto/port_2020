@@ -34,6 +34,7 @@ module.exports = {
     'import/no-unresolved': 2,
     'import/no-webpack-loader-syntax': 0,
     'import/prefer-default-export': 0,
+    'react/no-unescaped-entities': 0,
     indent: [
       2,
       2,

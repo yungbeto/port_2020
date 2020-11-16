@@ -3,23 +3,24 @@ import styled from 'styled-components';
 
 export default styled(Link)`
   display: inline-flex;
-  padding: 0.25em 2em;
-  margin: 1em;
+  padding: 0.5em 1em;
+  margin: 0.5em 0.5em 0.5em 0;
+  border-radius: 0.5em;
   text-decoration: none;
-  border-radius: 4px;
   -webkit-font-smoothing: antialiased;
   -webkit-touch-callout: none;
   user-select: none;
   cursor: pointer;
   outline: 0;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: bold;
   font-size: 16px;
-  border: 2px solid #41addd;
-  color: #41addd;
+  line-height: 24px;
+  color: #ff41b4;
 
-  &:active {
-    background: #41addd;
-    color: #fff;
+  &:hover,
+  &:active,
+  &:focus {
+    background: rgba(255, 65, 180, 0.1);
+    color: #fffceb;
   }
 `;

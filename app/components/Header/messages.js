@@ -8,12 +8,16 @@ import { defineMessages } from 'react-intl';
 export const scope = 'boilerplate.components.Header';
 
 export default defineMessages({
-  home: {
-    id: `${scope}.home`,
-    defaultMessage: 'Home',
+  cv: {
+    id: `${scope}.cv`,
+    defaultMessage: 'L👀k at my CV ⇢',
   },
-  features: {
-    id: `${scope}.features`,
-    defaultMessage: 'Features',
+  work: {
+    id: `${scope}.work`,
+    defaultMessage: 'Work',
+  },
+  logo: {
+    id: `${scope}.logo`,
+    defaultMessage: 'Roby Saavedra',
   },
 });

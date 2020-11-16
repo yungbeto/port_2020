@@ -6,26 +6,28 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { FormattedMessage } from 'react-intl';
+import styled from 'styled-components';
 
-import H1 from 'components/H1';
 import messages from './messages';
 import List from './List';
 import ListItem from './ListItem';
 import ListItemTitle from './ListItemTitle';
 
+const Jumbo = styled.h1`
+  font-size: 64px;
+  line-height: 72px;
+`;
+
 export default function FeaturePage() {
   return (
     <div>
       <Helmet>
-        <title>Feature Page</title>
-        <meta
-          name="description"
-          content="Feature page of React.js Boilerplate application"
-        />
+        <title>Roby Saavedra - Home</title>
+        <meta name="Roby Saavedra" content="Product designer" />
       </Helmet>
-      <H1>
+      <Jumbo>
         <FormattedMessage {...messages.header} />
-      </H1>
+      </Jumbo>
       <List>
         <ListItem>
           <ListItemTitle>
