@@ -11,6 +11,6 @@ export default defineMessages({
   footermessage: {
     id: `${scope}.footer.message`,
     defaultMessage:
-      '🥴 Sorry for the mess -- this site is currently under construction 🚧',
+      '🚧 Sorry for the mess -- this site is currently under construction 🚧',
   },
 });
