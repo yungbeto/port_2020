@@ -18,6 +18,6 @@ export default defineMessages({
   },
   logo: {
     id: `${scope}.logo`,
-    defaultMessage: 'Roby Saavedra',
+    defaultMessage: '🚧 Roby Saavedra',
   },
 });

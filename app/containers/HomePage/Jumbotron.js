@@ -39,6 +39,19 @@ const Three = styled.h3`
 `;
 
 const CvLink = styled.a`
+  @keyframes hvr-buzz {
+    50% {
+      transform: translateX(1px) rotate(1.5deg);
+    }
+    100% {
+      transform: translateX(-2px) rotate(-1deg);
+    }
+  }
+  display: inline-block;
+  animation-name: hvr-buzz;
+  animation-duration: 0.15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
   color: #df00cc;
   text-decoration: none;
 `;
@@ -57,7 +70,7 @@ const Revel = styled.a`
   }
   &:hover {
     color: #0089bf;
-    transform: skew(-50deg);
+    transform: skew(-23deg);
   }
 `;
 
