@@ -28,7 +28,7 @@ const Two = styled.h2`
 `;
 
 const Three = styled.h3`
-  color: rgb(255, 252, 235, 0.5);
+  color: rgb(255, 252, 235, 0.6);
   font-size: 24px;
   line-height: 32px;
   font-weight: normal;
@@ -44,17 +44,35 @@ const CvLink = styled.a`
 `;
 
 const Revel = styled.a`
+  display: inline-block;
   color: #00b9f2;
   text-decoration: none;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transform-origin: 0 100%;
   &:visited {
     color: #00b9f2;
   }
   &:hover {
     color: #0089bf;
+    transform: skew(-50deg);
   }
 `;
 
 const Flocab = styled.a`
+  @keyframes hvr-bob {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(-16px);
+    }
+  }
+  display: inline-block;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   color: #ffbf22;
   text-decoration: none;
   &:visited {
@@ -62,6 +80,13 @@ const Flocab = styled.a`
   }
   &:hover {
     color: #ff8614;
+    animation-name: hvr-bob-float, hvr-bob;
+    animation-duration: 0.3s, 1.5s;
+    animation-delay: 0.05s, 0.3;
+    animation-timing-function: ease-out, ease-in-out;
+    animation-iteration-count: 1, infinite;
+    animation-fill-mode: forwards;
+    animation-direction: normal, alternate;
   }
 `;
 

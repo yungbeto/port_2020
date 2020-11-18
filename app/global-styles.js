@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-* {
+a {
   -webkit-transition: all 0.2s ease;
   -moz-transition:    all 0.2s ease;
   -ms-transition:     all 0.2s ease;
