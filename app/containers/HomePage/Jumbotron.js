@@ -38,19 +38,61 @@ const Three = styled.h3`
   }
 `;
 
+const CvLink = styled.a`
+  color: #df00cc;
+  text-decoration: none;
+`;
+
+const Revel = styled.a`
+  color: #00b9f2;
+  text-decoration: none;
+  &:visited {
+    color: #00b9f2;
+  }
+  &:hover {
+    color: #0089bf;
+  }
+`;
+
+const Flocab = styled.a`
+  color: #ffbf22;
+  text-decoration: none;
+  &:visited {
+    color: #ffbf22;
+  }
+  &:hover {
+    color: #ff8614;
+  }
+`;
+
 export default function Jumbotron() {
   return (
     <JumboWrapper>
       <One>
-        Hello I&apos;m Roby - I&apos;m currently a senior product designer at
-        Revel where I make software that helps people get around.
+        Hello I&apos;m Roby - I&apos;m currently a senior product designer
+        at&nbsp;
+        <Revel href="https://gorevel.com/" target="_blank">
+          Revel
+        </Revel>{' '}
+        where I make software that helps people get around.
       </One>
       <Two>
-        Before that I made software for students and teachers at Flocabulary.
+        Before that I made software for students and teachers at&nbsp;{' '}
+        <Flocab
+          href="https://www.flocabulary.com/tools/branding"
+          target="_blank"
+        >
+          Flocabulary
+        </Flocab>
+        .
       </Two>
       <Three>
-        Prior to that I did a lot more stuff which you can conveniently find in
-        my CV if you&apos;re interested.
+        Prior to that I did a lot more stuff which you can conveniently find
+        in&nbsp;
+        <CvLink href="https://lookatmycurriculumvitae.com/" target="_blank">
+          my CV
+        </CvLink>
+        &nbsp;if you&apos;re interested.
       </Three>
     </JumboWrapper>
   );
